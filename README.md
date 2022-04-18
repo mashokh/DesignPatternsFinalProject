@@ -52,46 +52,12 @@ Concurrency is also out of scope. You do not have to solve the so-called "double
 - Implement only API endpoints (UI is out of scope)
 - Concurrancy is out of scope
 
-## Unit testing
-
-Provide unit tests that prove the correctness of your software artifacts
-
 ## Linting/formatting
 
 Format your code using `black` auto formatter
 
 Sort your imports with `isort` using the following configuration:
 
-```
-[settings]
-profile = black
-```
-
 Check your static types with `mypy` using the following configuration:
 
-```
-[mypy]
-python_version = 3.9
-ignore_missing_imports = True
-strict = True
-```
-
 Check your code with `flake8` using the following configuration:
-
-```
-[flake8]
-max-line-length = 88
-select = C,E,F,W,B,B950
-ignore = E501,W503
-```
-
-## Grading
-
-- 20%: Architecture
-- 40%: Design
-- 30%: Testing
-- 10%: Linting/formatting
-
-## Disclaimer
-
-We reserve the right to penalize you for violating well-known software principles that you covered in previous courses such as decomposition or DRY. We sincerely ask you to not make a mess of your code.
